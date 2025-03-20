@@ -1,0 +1,82 @@
+@import './base.css';
+
+#app {
+    max-width: 1920px;
+    margin: 0 auto;
+    font-weight: normal;
+}
+
+$primary-color: #217BF4;
+$text-color: #0A093D;
+$secondary-text: #656464;
+
+
+.primary {
+    background: $primary-color;
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 24px 42px;
+    border-radius: 14px;
+    border: 0;
+    color: #fff;
+    letter-spacing: 0.6px;
+    transition: 0.5s;
+    box-shadow: 0px 7px 22px -6px #207bf457;
+    &:hover{
+        cursor: pointer;
+        color: #fff;
+        background: #20202D;
+    }
+}
+
+.btn {
+    color: $primary-color;
+    font-size: 12px;
+    line-height: 12px;
+    font-weight: 500;
+    padding: 12px 30px;
+    border-radius: 8px;
+    border: 0;
+    background:  rgba(33, 123, 244, 0.1);
+    letter-spacing: 0.6px;
+    transition: 0.5s;
+    &:hover{
+        cursor: pointer;
+        color: #fff;
+        background: #20202D;
+    }
+}
+.primary-full{
+    border: 1px solid $primary-color;
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 500;
+    color: $primary-color;
+    padding: 24px 42px;
+    border-radius: 14px;
+    background: #D4E7FE;
+    letter-spacing: 0.6px;
+    transition: 0.5s;
+    &:hover{
+        cursor: pointer;
+        border: 1px solid #20202D;
+        color: #20202D;
+    }
+}
+input {
+    &:focus-visible {
+        outline: inherit;
+    }
+}
+
+
+@media (min-width: 1024px) {
+    #app {
+        grid-template-columns: 1fr 1fr;
+        width: 100%;
+    }
+}
